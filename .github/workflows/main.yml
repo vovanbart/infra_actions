@@ -71,4 +71,4 @@ jobs:
         script: |
           sudo docker pull vovanbart/infra_actions
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 ${{ secrets.DOCKER_USERNAME }}/infra_actions:latest
+          sudo docker run --rm -d -p 5000:5000 vovanbart/infra_actions
